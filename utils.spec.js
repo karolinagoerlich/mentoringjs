@@ -52,7 +52,7 @@ describe("eachMinuteOfInterval", () => {
     it("return only start date if end date is in the past", () => {
         //arrange
         const start = new Date(Date.UTC(2021, 1, 25, 7, 0))
-        const end = new Date(Date.UTC(2021, 1, 24, 7, 0))
+        const end = new Date(Date.UTC(2021, 1, 23, 7, 0))
         const expectedResult = [start]
         //act
         const result = eachMinuteOfInterval({ start, end } );
