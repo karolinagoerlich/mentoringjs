@@ -1,3 +1,4 @@
+const addMinutes = require('date-fns/addMinutes')
 const SunCalc = require('suncalc');
 const format = require("date-fns/format")
 
@@ -40,5 +41,5 @@ function eachMinuteOfInterval({ start, end }, { step = 30 } = {}) {
 }
 
 module.exports = {
-    calculateGermanSunriseSunsetForDate
+    calculateGermanSunriseSunsetForDate, eachMinuteOfInterval
 }
